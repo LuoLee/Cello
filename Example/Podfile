@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Cello_Tests' do
+  pod 'Cello', :path => '../'
+  
+  
+end
