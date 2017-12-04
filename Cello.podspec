@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Cello'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Cello.'
+  s.summary          = 'Cello is a library that brings higher level programming to C.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,35 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Cello is a library that brings higher level programming to C.
+
+By acting as a modern, powerful runtime system Cello makes many things easy that were previously impractical or awkward in C such as:
+
+    Generic Data Structures
+    Polymorphic Functions
+    Interfaces / Type Classes
+    Constructors / Destructors
+    Optional Garbage Collection
+    Exceptions
+    Reflection
+
+And because Cello works seamlessly alongside standard C you get all the other benefits such as great performance, powerful tooling, and extensive libraries.
                        DESC
 
-  s.homepage         = 'https://github.com/lilo/Cello'
+  s.homepage         = 'https://github.com/LuoLee/Cello'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lilo' => 'luolee.me@gmail.com' }
   s.source           = { :git => 'https://github.com/lilo/Cello.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '6.0'
 
-  s.source_files = 'Cello/Classes/**/*'
+  s.preserve_paths = 'Cello.framework/*'
+  s.public_header_files = 'Cello.framework/Versions/A/Headers/*.h'
+  s.source_files = 'Cello.framework/Versions/A/Headers/*.h'
+  s.vendored_frameworks = "Cello.framework"
   
-  # s.resource_bundles = {
-  #   'Cello' => ['Cello/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

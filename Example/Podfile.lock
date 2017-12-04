@@ -1,0 +1,16 @@
+PODS:
+  - Cello (0.1.0)
+
+DEPENDENCIES:
+  - Cello (from `../`)
+
+EXTERNAL SOURCES:
+  Cello:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Cello: 1471bdc505f0ec9e9227165245cd86ab2d2b9d97
+
+PODFILE CHECKSUM: 3db8584870513abb6dc5914e8f7799d7d7e4160a
+
+COCOAPODS: 1.2.1
