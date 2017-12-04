@@ -37,7 +37,7 @@ And because Cello works seamlessly alongside standard C you get all the other be
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lilo' => 'luolee.me@gmail.com' }
-  s.source           = { :git => 'https://github.com/lilo/Cello.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LuoLee/Cello.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '6.0'
