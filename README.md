@@ -22,9 +22,6 @@ pod 'Cello'
 
 ## Example
 
-Examples
---------
-
 ```c
 #include "Cello.h"
 
